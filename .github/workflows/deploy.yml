@@ -36,6 +36,8 @@ jobs:
             set sftp:auto-confirm yes
             set mirror:overwrite yes
             cd /home/obohzjcx/nexa.acknamasolischool.com/
-            mirror -R --overwrite --ignore-time --verbose dist/ .
+            mirror -R --overwrite --only-newer --verbose dist/ .
             quit
           EOF
+
+    
